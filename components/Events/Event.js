@@ -20,8 +20,7 @@ class Event extends Component{
     render(){
         let event= this.state.data.length>0? this.state.data.map(e=>{
             {/*If there is an  Image extract it*/}
-            let image= e.performers.map(e=>e.images.huge);
-           
+            let image= e.performers.map(e=>e.images.huge); 
             {/* Extracting lattitude and longetitude to generate stay22 map later*/}
             let lat= e.venue.location.lat , lon= e.venue.location.lon;
             return <div style={{width:'60%', margin:'1% auto', textAlign:'center'}}>
